@@ -1,0 +1,72 @@
+
+.usercard{
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transition: all 100ms ease;
+}
+.usercard.expanded{
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 28px;
+    height: 100vh;
+    transition: all 100ms ease;
+}
+.upper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.upper div{
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.usercard h6{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.usercard span,.usercard p{
+    font-weight: 400;
+}
+.view button{
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+.lower{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+.lower.hidden{
+    display: none;
+}
+.lower div{
+    flex-basis: 40%;
+    margin: 5px;
+}
+.lower .description{
+    flex-basis: 100%;
+}
+
+@media screen and (max-width: 672px) {
+
+    .upper{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .upper div{
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        margin: 3px;
+    }
+   
+  }
+  

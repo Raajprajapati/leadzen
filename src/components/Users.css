@@ -1,0 +1,22 @@
+.pagination button{
+    border: 1px solid black;
+    color: red;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    margin: 4px;
+}
+.pagination button.active{
+    border: 1px solid black;
+    color: white;
+    background-color: red;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+}
+.pagination .navigation{
+    border: 1px solid black;
+    color: white;
+    background-color: red;
+}
